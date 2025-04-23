@@ -67,7 +67,7 @@ const DownloadApp: React.FC = () => {
                 </div>
               </a>
               
-              <a 
+              {/* <a 
                 href="#" 
                 className="bg-black hover:bg-gray-900 text-white px-6 py-3 rounded-lg flex items-center justify-center transition-colors"
               >
@@ -76,7 +76,7 @@ const DownloadApp: React.FC = () => {
                   <div className="text-xs">DESCARGA EN</div>
                   <div className="text-lg font-semibold">App Store</div>
                 </div>
-              </a>
+              </a> */}
             </div>
           </div>
           
@@ -85,12 +85,12 @@ const DownloadApp: React.FC = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-blue-400 rounded-3xl opacity-30 blur-xl"></div>
               <img 
-                src="/app-mockup.png" 
+                src="/img/mokup.png" 
                 alt="MultiGym App" 
                 className="relative z-10 max-w-full max-h-96"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = 'https://via.placeholder.com/300x600?text=MultiGym+App';
+                  e.currentTarget.src = 'public/img';
                 }}
               />
             </div>

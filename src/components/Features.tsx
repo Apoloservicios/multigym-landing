@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaQrcode, FaUserFriends, FaChartLine, FaCreditCard, FaCalendarCheck } from 'react-icons/fa';
+import { FaQrcode, FaUserFriends, FaChartLine, FaCreditCard, FaCalendarCheck, FaDumbbell  } from 'react-icons/fa';
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -40,9 +40,9 @@ const Features: React.FC = () => {
       description: "Visualiza estadísticas, tendencias y métricas clave para optimizar tu negocio."
     },
     {
-      icon: <FaCreditCard />,
-      title: "Integración con Pagos",
-      description: "Procesa pagos online, automatiza cobros recurrentes y gestiona la facturación fácilmente."
+      icon: <FaDumbbell />,
+      title: "Rutinas de ejercicios",
+      description: "Crear y administra las rutinas de ejercios de tus clientes, revisar el progreso y el seguimiento fácilmente."
     }
   ];
 
@@ -69,14 +69,14 @@ const Features: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <a 
             href="#register" 
             className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-full inline-block transition-colors shadow-md"
           >
             Descubre todas las funcionalidades
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -13,12 +13,12 @@ const Hero: React.FC = () => {
       {/* Imagen o video de fondo */}
       <div className="absolute inset-0 z-[-1]">
         <img 
-          src="/hero-bg.jpg" 
+          src="/img/mancuernas-min.jpg" 
           alt="Personas usando MultiGym" 
           className="w-full h-full object-cover"
           onError={(e) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src = 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80';
+            e.currentTarget.src = 'img';
           }}
         />
       </div>
@@ -27,17 +27,17 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10 py-20">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Optimiza el acceso y gestión de tu gimnasio con MultiGym
+            Optimiza la gestión de tu gimnasio con MultiGym
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-100">
-            La solución completa para gestionar usuarios, controlar accesos y administrar 
+            La solución completa para gestionar usuarios, rutinas  de ejercicios  y administrar 
             suscripciones en tu gimnasio de forma digital.
           </p>
           
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <a 
-              href="#register" 
+              href="https://app.multigym.com.ar/" 
               className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-4 rounded-full text-center transition-colors shadow-lg flex items-center justify-center"
             >
               Regístrate en la Web
@@ -51,12 +51,7 @@ const Hero: React.FC = () => {
                 <FaGoogle className="mr-2" /> Google Play
               </a>
               
-              <a 
-                href="#download"
-                className="bg-white hover:bg-gray-100 text-gray-900 font-medium px-6 py-4 rounded-full text-center transition-colors shadow-lg flex items-center justify-center"
-              >
-                <FaApple className="mr-2" /> App Store
-              </a>
+             
             </div>
           </div>
         </div>

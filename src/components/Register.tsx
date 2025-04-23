@@ -74,12 +74,12 @@ const Register: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-blue-500 rounded-lg transform rotate-3"></div>
               <img 
-                src="/platform-mockup.png" 
+                src="/img/mancuernas600x400.jpg" 
                 alt="MultiGym Platform" 
                 className="relative z-10 rounded-lg shadow-xl max-w-full max-h-96 object-cover"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = 'https://via.placeholder.com/600x400?text=MultiGym+Platform';
+                  e.currentTarget.src = 'public/image';
                 }}
               />
             </div>

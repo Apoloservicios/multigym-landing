@@ -15,7 +15,7 @@ const App: React.FC = () => {
     <div className="font-sans bg-gray-50">
       {/* WhatsApp flotante */}
       <a 
-        href="https://wa.me/1234567890" 
+        href="https://wa.me/2604515854" 
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 hover:bg-green-600 transition-all duration-300"
@@ -26,7 +26,7 @@ const App: React.FC = () => {
       <Header />
       <Hero />
       <Features />
-      <Register />
+      {/* <Register /> */}
       <DownloadApp />
       <Contact />
       <Footer />

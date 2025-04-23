@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
           {/* Logo y descripción */}
           <div>
             <img 
-              src="/logo-white.svg" 
+              src="/img/logomultigym_h_b.png" 
               alt="MultiGym Logo" 
               className="h-10 mb-4"
               onError={(e) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = 'https://via.placeholder.com/120x40?text=MultiGym&bg=2d3748&fg=ffffff';
+                e.currentTarget.src = 'public/img';
               }}
             />
             <p className="mb-4">
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                 <a href="#features" className="hover:text-white transition-colors">Características</a>
               </li>
               <li>
-                <a href="#register" className="hover:text-white transition-colors">Registro</a>
+                <a href="https://app.multigym.com.ar/" className="hover:text-white transition-colors">Registro</a>
               </li>
               <li>
                 <a href="#download" className="hover:text-white transition-colors">Descarga la App</a>
@@ -66,19 +66,19 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Contáctanos</h3>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:info@multigym.com" className="hover:text-white transition-colors">
-                  info@multigym.com
+                <a href="mailto:info@multigym.com.ar" className="hover:text-white transition-colors">
+                  info@multigym.com.ar
                 </a>
               </li>
               <li>
                 <a href="tel:+123456789" className="hover:text-white transition-colors">
-                  +123 456 789
+                  +260 4515854
                 </a>
               </li>
               <li>
                 <address className="not-italic">
-                  Av. Siempre Viva 123<br />
-                  Ciudad, CP 12345
+                  Av. Antartida Argentina 1297  <br />
+                  San Rafael , Mendoza, CP 5600.
                 </address>
               </li>
             </ul>
@@ -91,12 +91,12 @@ const Footer: React.FC = () => {
               <li>
                 <a href="#" className="hover:text-white transition-colors">Centro de Ayuda</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white transition-colors">Blog</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="hover:text-white transition-colors">Tutoriales</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className="hover:text-white transition-colors">Preguntas Frecuentes</a>
               </li>
